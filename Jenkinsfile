@@ -60,6 +60,7 @@ pipeline {
                sh 'docker rm -f web'
                sh 'docker run -itd --name web -p 80:80 ravikumarmanchi/"$JOB_NAME":latest'
         }
-        }            
+        }    
+      
     }
 }
